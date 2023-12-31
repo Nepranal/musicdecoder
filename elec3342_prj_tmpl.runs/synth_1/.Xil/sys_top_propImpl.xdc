@@ -1,0 +1,22 @@
+set_property SRC_FILE_INFO {cfile:/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/elec3342_prj_tmpl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc rfile:../../../elec3342_prj_tmpl.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc id:1 order:EARLY scoped_inst:clk_wiz_inst/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/xdc/musicdec.xdc rfile:../../../xdc/musicdec.xdc id:2} [current_design]
+current_instance clk_wiz_inst/inst
+set_property src_info {type:SCOPED_XDC file:1 line:57 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter [get_clocks -of_objects [get_ports clk_100m]] 0.1
+current_instance
+set_property src_info {type:XDC file:2 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports clk_100m]
+set_property src_info {type:XDC file:2 line:47 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U16 [get_ports led_busy]
+set_property src_info {type:XDC file:2 line:112 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U18 [get_ports clr]
+set_property src_info {type:XDC file:2 line:191 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L17 [get_ports csn]
+set_property src_info {type:XDC file:2 line:197 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN P17 [get_ports sdata]
+set_property src_info {type:XDC file:2 line:200 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN R18 [get_ports sclk]
+set_property src_info {type:XDC file:2 line:266 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A18 [get_ports sout]
+set_property src_info {type:XDC file:2 line:297 export:INPUT save:INPUT read:READ} [current_design]
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clr_IBUF]

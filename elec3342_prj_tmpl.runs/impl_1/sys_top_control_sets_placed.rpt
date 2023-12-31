@@ -1,0 +1,100 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Nov 29 05:10:28 2023
+| Host         : elec3342 running 64-bit Ubuntu 20.04.5 LTS
+| Command      : report_control_sets -verbose -file sys_top_control_sets_placed.rpt
+| Design       : sys_top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    22 |
+|    Minimum number of control sets                        |    22 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    77 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    22 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     7 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     5 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |           12 |
+| No           | No                    | Yes                    |              40 |           15 |
+| No           | Yes                   | No                     |               2 |            2 |
+| Yes          | No                    | No                     |              14 |            3 |
+| Yes          | No                    | Yes                    |              59 |           17 |
+| Yes          | Yes                   | No                     |              12 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
+|               Clock Signal               |               Enable Signal               |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++------------------------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
+|  mcdecoder_inst/temp_dvalid__0           |                                           | symb_det_inst/symbol_valid_reg_1 |                1 |              1 |
+|  myuart_inst/sout_temp_reg/G0            |                                           |                                  |                1 |              1 |
+|  clr_IBUF_BUFG                           |                                           | mcdecoder_inst/dvalid_reg_1      |                1 |              1 |
+|  clk_BUFG                                |                                           | mcdecoder_inst/dvalid_reg_1      |                2 |              2 |
+|  symb_det_inst/symb_out_temp__0          |                                           |                                  |                2 |              3 |
+|  clk_wiz_inst/inst/clk_12288k            | adc_ctrl_inst/FSM_onehot_state[3]_i_1_n_0 | clr_IBUF_BUFG                    |                1 |              4 |
+|  clk_BUFG                                | symb_det_inst/symbol_valid_reg_0[0]       | clr_IBUF_BUFG                    |                2 |              4 |
+|  clk_BUFG                                |                                           | symb_det_inst/silent             |                1 |              4 |
+|  clk_BUFG                                | myuart_inst/countsup1_reg_n_0             | mcdecoder_inst/dvalid_reg_0      |                2 |              6 |
+|  clk_BUFG                                |                                           | clr_IBUF_BUFG                    |                3 |              6 |
+|  clk_wiz_inst/inst/clk_12288k            | clk_wiz_inst/inst/locked                  |                                  |                2 |              7 |
+|  clk_wiz_inst/inst/clk_12288k            |                                           | clr_IBUF_BUFG                    |                2 |              7 |
+|  mcdecoder_inst/temp_dout_reg[6]_i_2_n_0 |                                           |                                  |                2 |              7 |
+|  clk_BUFG                                | mcdecoder_inst/E[0]                       | myuart_inst/countsup2            |                1 |              7 |
+|  clk_BUFG                                | mcdecoder_inst/p_0_in0                    |                                  |                1 |              7 |
+|  clk_BUFG                                |                                           | myuart_inst/ctr10                |                3 |              8 |
+|  clk_wiz_inst/inst/clk_12288k            | adc_ctrl_inst/data[11]_i_1_n_0            | clr_IBUF_BUFG                    |                4 |             12 |
+|  clk_wiz_inst/inst/clk_12288k            | adc_ctrl_inst/dshift                      | clr_IBUF_BUFG                    |                3 |             12 |
+|  clk_BUFG                                | symb_det_inst/start_count                 | symb_det_inst/ctr1[0]_i_2_n_0    |                4 |             13 |
+|  clk_BUFG                                |                                           | symb_det_inst/ctr1[0]_i_2_n_0    |                4 |             13 |
+|  clk_BUFG                                | symb_det_inst/ctr30                       | symb_det_inst/ctr1[0]_i_2_n_0    |                4 |             13 |
+|  clk_BUFG                                |                                           |                                  |                7 |             17 |
++------------------------------------------+-------------------------------------------+----------------------------------+------------------+----------------+
+
+

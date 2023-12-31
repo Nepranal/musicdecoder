@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/elec3342_prj_tmpl.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/src_files/mcdecoder.vhd,1701202657,vhdl,,,,mcdecoder,,,,,,,,
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/src_files/myuart.vhd,1701163091,vhdl,,,,myuart,,,,,,,,
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/src_files/sim_top.vhd,1669107162,vhdl,,,,sim_top,,,,,,,,
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/src_files/symb_det.vhd,1701196544,vhdl,,,,symb_det,,,,,,,,
+/home/user/Downloads/elec3342_prj_tmpl/elec3342_prj_tmpl/tb/sim_top_tb.vhd,1700643786,vhdl,,,,sim_top_tb,,,,,,,,
