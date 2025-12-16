@@ -27,10 +27,8 @@ The module also has a delay line with 2 registers to compare 2 different input v
 
 `symb_det` will only start operation when it’s no longer quiet. We do this by checking the magnitude of the input value. If greater than some predefined value, it will keep on listening and calculating.
 
-<figure>
-    <img src="images/image3.jpg">
-    <figcaption>Figure 1. symb_det</figcaption>
-</figure>
+![alt text](images/image3.jpg)
+_Figure 1. symb_det_
 
 ## MCDECODER
 
